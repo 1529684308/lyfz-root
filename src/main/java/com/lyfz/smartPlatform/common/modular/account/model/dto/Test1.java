@@ -1,4 +1,4 @@
 package com.lyfz.smartPlatform.common.modular.account.model.dto;
 
-public class Test {
+public class Test1 {
 }

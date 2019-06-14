@@ -29,6 +29,12 @@
             <scope>provided</scope>
         </dependency>
 
+        <dependency>
+            <groupId>com.lyfz</groupId>
+            <artifactId>smartPlatform-modle</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 
 
