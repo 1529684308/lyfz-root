@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.Date;
 
 @Data
-public class FunctionVO {
+public class ValidFunctionVO {
 
     private Integer enterpriseId;
 
