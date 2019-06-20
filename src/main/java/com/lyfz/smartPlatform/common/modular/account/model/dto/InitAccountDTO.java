@@ -11,14 +11,19 @@ public class InitAccountDTO {
     private String username;
 
     /**
+     * 密码
+     */
+    private String password;
+
+    /**
      * 企业id
      */
-    private Long enterpriseId;
+    private Integer enterpriseId;
 
     /**
      * 门店id
      */
-    private Long shopId;
+    private Integer shopId;
 
     /**
      * 功能ids
