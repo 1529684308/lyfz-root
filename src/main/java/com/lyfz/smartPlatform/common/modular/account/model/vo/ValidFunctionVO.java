@@ -2,10 +2,11 @@ package com.lyfz.smartPlatform.common.modular.account.model.vo;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Data
-public class ValidFunctionVO {
+public class ValidFunctionVO implements Serializable {
 
     private Integer enterpriseId;
 
