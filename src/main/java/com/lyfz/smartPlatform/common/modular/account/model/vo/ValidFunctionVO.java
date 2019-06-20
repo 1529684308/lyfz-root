@@ -27,6 +27,7 @@ public class ValidFunctionVO {
 
     private String url;
 
-    private Date end_time;
+    private Date endTime;
+
 }
 
