@@ -6,19 +6,29 @@ import lombok.Data;
 public class InitAccountDTO {
 
     /**
+     * 是否初始化 true代表初始化，false代表更新
+     */
+    private Boolean isInit;
+
+    /**
      * 账号
      */
     private String username;
 
     /**
+     * 密码
+     */
+    private String password;
+
+    /**
      * 企业id
      */
-    private Long enterpriseId;
+    private Integer enterpriseId;
 
     /**
      * 门店id
      */
-    private Long shopId;
+    private Integer shopId;
 
     /**
      * 功能ids
