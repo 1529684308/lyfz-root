@@ -35,5 +35,15 @@
         </dependency>
     </dependencies>
 
+    <distributionManagement>
+        <repository>
+            <id>deploy-release</id>
+            <url>http://maven-pak:8081/nexus/content/repositories/releases/</url>
+        </repository>
 
+        <snapshotRepository>
+            <id>deploy-snapshot</id>
+            <url>http://maven-pak:8081/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
