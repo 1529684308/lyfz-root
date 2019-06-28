@@ -26,9 +26,19 @@ public class InitAccountDTO {
     private Integer enterpriseId;
 
     /**
+     * 企业名字
+     */
+    private String enterpriseName;
+
+    /**
      * 门店id
      */
     private Integer shopId;
+
+    /**
+     * 门店名
+     */
+    private String shopName;
 
     /**
      * 功能ids
