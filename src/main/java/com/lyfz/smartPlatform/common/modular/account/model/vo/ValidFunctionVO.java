@@ -3,7 +3,9 @@ package com.lyfz.smartPlatform.common.modular.account.model.vo;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Data
 public class ValidFunctionVO implements Serializable {
@@ -50,6 +52,8 @@ public class ValidFunctionVO implements Serializable {
      * 有效期结束时间
      */
     private Date endTime;
+
+    private List<ValidFunctionVO> childNodes = new ArrayList<>();
 
 }
 
