@@ -43,7 +43,7 @@ public class InitAccountDTO {
     /**
      * 功能ids
      */
-    private String functionIds;
+    private FunctionDTO functionIds;
 
 
 }
