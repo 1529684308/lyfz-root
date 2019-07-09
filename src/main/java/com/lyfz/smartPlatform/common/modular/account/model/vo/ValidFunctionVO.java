@@ -51,7 +51,7 @@ public class ValidFunctionVO implements Serializable {
     /**
      * 有效期结束时间
      */
-    private Date endTime;
+    private Long endTime;
 
     private List<ValidFunctionVO> childNodes = new ArrayList<>();
 
