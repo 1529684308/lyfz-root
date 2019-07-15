@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.core.enums.IEnum;
 /**
  * Created by mzh on 2019/6/28.
  */
-public enum ProductPurchaseType implements IEnum<Integer>{
+public enum ProductPurchaseType implements IEnum<Integer> {
 
     /**
      * 套餐订购
@@ -18,8 +18,7 @@ public enum ProductPurchaseType implements IEnum<Integer>{
     /**
      * 其他订购
      */
-    OTHER(3)
-    ;
+    OTHER(3);
 
     private Integer index;
 

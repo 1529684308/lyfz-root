@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.core.enums.IEnum;
 /**
  * Created by mzh on 2019/6/26.
  */
-public enum  Type implements IEnum<Integer> {
+public enum Type implements IEnum<Integer> {
     /**
      * 婚纱类型
      */

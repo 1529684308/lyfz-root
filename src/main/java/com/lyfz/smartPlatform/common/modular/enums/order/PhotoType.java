@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.core.enums.IEnum;
 /**
  * Created by mzh on 2019/6/28.
  */
-public enum PhotoType implements IEnum<Integer>{
+public enum PhotoType implements IEnum<Integer> {
 
     /**
      * 正常
@@ -18,8 +18,7 @@ public enum PhotoType implements IEnum<Integer>{
     /**
      * 补拍
      */
-    MAKE_UP(3)
-    ;
+    MAKE_UP(3);
 
     private Integer index;
 

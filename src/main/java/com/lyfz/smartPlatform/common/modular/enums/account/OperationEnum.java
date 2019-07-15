@@ -12,7 +12,7 @@ public enum OperationEnum {
     private String desc;
     private Integer code;
 
-    private OperationEnum(String desc, Integer code){
+    private OperationEnum(String desc, Integer code) {
         this.desc = desc;
         this.code = code;
     }

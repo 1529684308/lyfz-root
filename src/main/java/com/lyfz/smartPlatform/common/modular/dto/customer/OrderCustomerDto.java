@@ -11,7 +11,7 @@ import java.util.List;
  */
 @ApiModel(value = "客户对象")
 @Data
-public class OrderCustomerDto implements IDto{
+public class OrderCustomerDto implements IDto {
 
 
     /**
