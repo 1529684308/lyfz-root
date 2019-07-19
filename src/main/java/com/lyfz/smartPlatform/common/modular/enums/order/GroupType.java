@@ -14,8 +14,7 @@ public enum GroupType implements IEnum<Integer> {
     /**
      * 联系人类型
      */
-    CONTACT(2)
-    ;
+    CONTACT(2);
 
     private Integer index;
 

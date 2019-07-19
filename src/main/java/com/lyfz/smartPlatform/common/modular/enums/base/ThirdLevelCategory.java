@@ -4,7 +4,7 @@ package com.lyfz.smartPlatform.common.modular.enums.base;
  * @Author: mzh
  * @CreateTime: 2019-07-05
  */
-public enum  ThirdLevelCategory {
+public enum ThirdLevelCategory {
 
     COMMUNICATION_TYPE1("选衣客人", SecondaryCategory.COMMUNICATION_TYPE_PHOTO_CONTROL),
     COMMUNICATION_TYPE2("拍照客人", SecondaryCategory.COMMUNICATION_TYPE_PHOTO_CONTROL),
@@ -25,13 +25,13 @@ public enum  ThirdLevelCategory {
     COMMUNICATION_TYPE15("会员积分", SecondaryCategory.COMMUNICATION_TYPE_COMMUNICATION_ASSISTANT),
     COMMUNICATION_TYPE16("怀孕周期", SecondaryCategory.COMMUNICATION_TYPE_COMMUNICATION_ASSISTANT),
 
-            ;
+    ;
 
     private SecondaryCategory secondaryCategory;
 
     private String categoryName;
 
-    ThirdLevelCategory(String categoryName,SecondaryCategory secondaryCategory) {
+    ThirdLevelCategory(String categoryName, SecondaryCategory secondaryCategory) {
         this.categoryName = categoryName;
         this.secondaryCategory = secondaryCategory;
     }

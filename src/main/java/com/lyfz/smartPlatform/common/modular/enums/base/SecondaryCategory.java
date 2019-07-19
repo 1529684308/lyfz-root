@@ -51,14 +51,6 @@ public enum SecondaryCategory {
     ;
 
 
-
-
-
-
-
-
-
-
     private String categoryName;
 
     private CategoryType categoryType;

@@ -1,9 +1,10 @@
 package com.lyfz.smartPlatform.common.modular.dto.account;
 
+import com.lyfz.smartPlatform.core.model.dto.IDto;
 import lombok.Data;
 
 @Data
-public class InitAccountDTO {
+public class InitAccountDTO implements IDto {
 
     /**
      * 是否初始化 true代表初始化，false代表更新
