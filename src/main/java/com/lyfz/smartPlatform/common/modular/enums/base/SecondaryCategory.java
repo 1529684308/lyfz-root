@@ -30,6 +30,7 @@ public enum SecondaryCategory {
 
     CUSTOMER_SOURCE_OLD("老客户", CategoryType.CUSTOMER_SOURCE),
     CUSTOMER_SOURCE_FRIEND("朋友介绍", CategoryType.CUSTOMER_SOURCE),
+    CUSTOMER_SOURCE_CAPITAL("客资客户", CategoryType.CUSTOMER_SOURCE),
     CUSTOMER_SOURCE_BABY("爱婴跟踪客户", CategoryType.CUSTOMER_SOURCE),
 
     PACKAGE_ACTIVITY("活动套系", CategoryType.PACKAGE),

@@ -1,13 +1,11 @@
 package com.lyfz.smartPlatform.common.modular.dto.customer;
 
-import com.lyfz.smartPlatform.common.modular.enums.order.SourceType;
+import com.lyfz.smartPlatform.common.modular.enums.order.DataStatus;
 import com.lyfz.smartPlatform.core.model.dto.IDto;
 import com.lyfz.smartPlatform.core.verify.Verify;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-
-import java.util.Date;
 
 /**
  * Created by mzh on 2019/6/26.
@@ -16,28 +14,11 @@ import java.util.Date;
 @Data
 public class ContactDto implements IDto {
 
+    /**
+     * 业务需要使用
+     */
     @ApiModelProperty(hidden = true)
     private Long id;
-
-    /**
-     * 来源,0:其它,1:老客户,2:朋友介绍,3:客资客户
-     */
-    @ApiModelProperty(value = "来源类型--orderDto的值是一样的",example="0")
-    private SourceType sourceType;
-
-    /**
-     * 来源ID
-     */
-    @ApiModelProperty(value = "来源ID--orderDto的值是一样的",example="0")
-    @Verify(name = "来源ID", value = "positiveInteger")
-    private Long originId;
-
-    /**
-     * 来源名
-     */
-    @ApiModelProperty(value = "来源名--orderDto的值是一样的",example="老客户")
-    @Verify(name = "来源名",value = "len_1_55")
-    private String originName;
 
     @ApiModelProperty(value = "客户姓名",example="老客户",required = true)
     @Verify(name = "客户姓名", value = "required|len_1_55")
@@ -51,21 +32,22 @@ public class ContactDto implements IDto {
      * 性别，0：女，1：男
      */
     @ApiModelProperty(value = "性别，0：女，1：男",example="0")
-    private Boolean sex;
+    private Boolean sex = false;
 
     /**
      * 客户区域Id
      */
-    @ApiModelProperty(value = "客户区域",example="1")
-    @Verify(name = "客户区域", value = "positiveInteger")
+    @ApiModelProperty(value = "客户区域ID",example="1")
+    @Verify(name = "客户区域ID", value = "positiveInteger")
     private Long categoryId;
 
     /**
-     * 区域名称
+     * 客户区域Id
      */
-    @ApiModelProperty(value = "区域名称",example="黄山")
-    @Verify(name = "客户区域", value = "len_0_55")
+    @ApiModelProperty(value = "客户区域名称",example="惠州")
+    @Verify(name = "客户区域名称", value = "len_1_55")
     private String categoryName;
+
 
     /**
      * 固定电话
@@ -127,7 +109,7 @@ public class ContactDto implements IDto {
      * 关系(多个宝宝的情况，关系可能不一样)
      */
     @ApiModelProperty(value = "宝宝关系数据JSON--这个数据格式后面商量决定",example="{}")
-    private String relationship;
+    private String relationJson;
 
     /**
      * 婚期年
@@ -150,23 +132,22 @@ public class ContactDto implements IDto {
     @Verify(name = "日", value = "positiveInteger")
     private Integer marriageDay;
 
+
     /**
      * 是否农历
      */
     @ApiModelProperty(value = "婚期-是否农历",example="true")
     private Boolean marriageLunar;
 
-    /**
-     * 预产期
-     */
-    @ApiModelProperty(value = "预产期")
-    private Date expectedDate;
+    @ApiModelProperty(value = "是否主联系人",example = "true")
+    private Boolean lord;
 
-    /**
-     * 介绍人ID
-     */
-    @ApiModelProperty(value = "介绍人ID",example = "1")
-    @Verify(name = "介绍人", value = "positiveInteger")
-    private Long friendId;
+    @ApiModelProperty(value = "加入组的ID",example = "1")
+    private Long groupId;
+
+    @ApiModelProperty(value = "数据状态",example = "1")
+    @Verify(name = "数据状态", value = "required")
+    private DataStatus dataStatus;
+
 
 }

@@ -1,5 +1,6 @@
 package com.lyfz.smartPlatform.common.modular.dto.customer;
 
+import com.lyfz.smartPlatform.common.modular.enums.order.DataStatus;
 import com.lyfz.smartPlatform.core.model.dto.IDto;
 import com.lyfz.smartPlatform.core.verify.Verify;
 import io.swagger.annotations.ApiModel;
@@ -59,6 +60,23 @@ public class BabyDto implements IDto {
     @ApiModelProperty(value = "生肖",example="猪")
     @Verify(name = "生肖", value = "chinese_0_2")
     private String zodiac;
+
+
+    /**
+     * 关系
+     */
+    @ApiModelProperty(value = "宝宝关系数据JSON--这个数据格式后面商量决定",example="{}")
+    private String relationJson;
+
+
+    @ApiModelProperty(value = "加入组的ID",example = "1")
+    private Long groupId;
+
+
+    @ApiModelProperty(value = "数据状态",example = "1")
+    @Verify(name = "数据状态", value = "required")
+    private DataStatus dataStatus;
+
 
 }
 

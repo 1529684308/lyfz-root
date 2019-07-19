@@ -1,23 +1,20 @@
-package com.lyfz.smartPlatform.common.modular.enums.order;
+package com.lyfz.smartPlatform.common.modular.enums.customer;
 
 import com.baomidou.mybatisplus.core.enums.IEnum;
 
 /**
  * @Author: mzh
- * @CreateTime: 2019-06-28
+ * @CreateTime: 2019-07-15
  */
 public enum CustomerType implements IEnum<Integer> {
-    /**
-     * 宝宝类型
-     */
-    BABY(1),
-    /**
-     * 联系人类型
-     */
-    CONTACT(2)
+
+    ORDER_CONTACT(0),
+    OLD_SYSTEM_CONTACT(1),
+    OTHER_CONTACT(2),
     ;
 
-    private Integer index;
+
+    private  Integer index;
 
     CustomerType(Integer index) {
         this.index = index;
