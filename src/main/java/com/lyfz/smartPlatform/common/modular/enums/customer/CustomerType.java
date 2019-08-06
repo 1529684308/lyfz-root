@@ -14,7 +14,7 @@ public enum CustomerType implements IEnum<Integer> {
     ;
 
 
-    private  Integer index;
+    private Integer index;
 
     CustomerType(Integer index) {
         this.index = index;

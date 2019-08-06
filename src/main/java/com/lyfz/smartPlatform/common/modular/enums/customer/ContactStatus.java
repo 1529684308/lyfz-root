@@ -9,8 +9,7 @@ import com.baomidou.mybatisplus.core.enums.IEnum;
 public enum ContactStatus implements IEnum<Integer> {
     NORMAL(1),
     TRACK(2),
-    LOSS(3)
-    ;
+    LOSS(3);
 
 
     private Integer index;

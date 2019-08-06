@@ -4,19 +4,16 @@ import com.baomidou.mybatisplus.core.enums.IEnum;
 
 import java.io.Serializable;
 
-public enum DressStatusEnum implements IEnum {
-    NORMAL("正常", "NORMAL"),
-    SOLD("已销售", "SOLD"),
-    SCRAP("已报废", "SCRAP"),
-    BACK("已回衣", "BACK"),
-    NOT_BACK("未回衣", "NOT_BACK"),
-    SOME_BACK("部分回衣", "SOME_BACK"),
+public enum OrderTypeEnum implements IEnum {
+
+    SALE("出售", "SALE"),
+    RENT("出租", "RENT"),
     ;
     private String desc;
     private String message;
 
 
-    DressStatusEnum(String desc, String message) {
+    OrderTypeEnum(String desc, String message) {
         this.desc = desc;
         this.message = message;
     }
