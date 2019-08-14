@@ -11,9 +11,9 @@ import lombok.Data;
 @Data
 public class CategoryVo implements IVo {
 
-    private Long id;
+    private String id;
 
-    private Long parentId;
+    private String parentId;
 
     private String name;
 
@@ -28,4 +28,6 @@ public class CategoryVo implements IVo {
     private CategoryType type;
 
     private Boolean isCategoryMenu;
+
+    private Integer level;
 }

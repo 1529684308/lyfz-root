@@ -1,6 +1,7 @@
 package com.lyfz.smartPlatform.common.modular.dto.customer;
 
 import com.lyfz.smartPlatform.common.modular.enums.order.DataStatus;
+import com.lyfz.smartPlatform.common.modular.enums.order.GroupType;
 import com.lyfz.smartPlatform.core.model.dto.IDto;
 import com.lyfz.smartPlatform.core.verify.Verify;
 import io.swagger.annotations.ApiModel;
@@ -72,8 +73,11 @@ public class BabyDto implements IDto {
     @ApiModelProperty(value = "加入组的ID",example = "1")
     private Long groupId;
 
+    @ApiModelProperty(value = "客户类型")
+    @Verify(name = "客户类型", value = "required")
+    private GroupType groupType;
 
-    @ApiModelProperty(value = "数据状态",example = "1")
+    @ApiModelProperty(value = "数据状态",example="ADD")
     @Verify(name = "数据状态", value = "required")
     private DataStatus dataStatus;
 

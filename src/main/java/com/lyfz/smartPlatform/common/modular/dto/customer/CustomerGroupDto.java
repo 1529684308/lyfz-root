@@ -6,6 +6,7 @@ import com.lyfz.smartPlatform.common.modular.enums.order.DataStatus;
 import com.lyfz.smartPlatform.common.modular.enums.order.Type;
 import com.lyfz.smartPlatform.core.model.dto.IDto;
 import com.lyfz.smartPlatform.core.verify.Verify;
+import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
@@ -16,7 +17,12 @@ import java.util.List;
  * @CreateTime: 2019-07-16
  */
 @Data
+@ApiModel(value="客户集合对象")
 public class CustomerGroupDto implements IDto {
+
+
+    @ApiModelProperty(hidden = true)
+    private Long id;
 
     @ApiModelProperty(value = "订单号",example="orderNo")
     @Verify(name = "订单号",value = "required|len_1_20")
@@ -49,11 +55,11 @@ public class CustomerGroupDto implements IDto {
     private Type type;
 
     /**
-     * 与订单类型相关,儿童没有,写真则是预产期，其他都是婚庆时间
+     * 类别客户等级
      */
-    @ApiModelProperty(value = "订单类型时间")
-    @Verify(name = "订单类型", value = "positiveInteger")
-    private Long typeTime;
+    @ApiModelProperty(value = "类别客户等级")
+    @Verify(name = "类别客户等级", value = "positiveInteger")
+    private Long customerLevel;
 
     /**
      * 来源ID
@@ -77,9 +83,18 @@ public class CustomerGroupDto implements IDto {
     /**
      * 流失类型
      */
-    @ApiModelProperty(value = "意向程度",example = "1")
+    @ApiModelProperty(value = "流失类型",example = "1")
     @Verify(name = "流失类型", value = "positiveInteger")
     private Long lossType;
+
+
+    /**
+     * 是否意客户
+     */
+    @ApiModelProperty(value = "是否意客户",example = "1")
+    @Verify(name = "是否意客户", value = "required")
+    private Boolean isIntention;
+
 
     /**
      * 意向程度
@@ -98,11 +113,11 @@ public class CustomerGroupDto implements IDto {
     /**
      * 介绍人ID
      */
-    @ApiModelProperty(value = "介绍人ID",example = "1")
+    @ApiModelProperty(value = "介绍人ID")
     @Verify(name = "介绍人", value = "positiveInteger")
     private Long friendId;
 
-    @ApiModelProperty(value = "数据状态",example = "1")
+    @ApiModelProperty(value = "数据状态",example="ADD")
     @Verify(name = "数据状态", value = "required")
     private DataStatus dataStatus;
 

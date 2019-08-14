@@ -22,6 +22,10 @@ public enum GroupType implements IEnum<Integer> {
         this.index = index;
     }
 
+    public Integer getIndex() {
+        return index;
+    }
+
     @Override
     public Integer getValue() {
         return index;
