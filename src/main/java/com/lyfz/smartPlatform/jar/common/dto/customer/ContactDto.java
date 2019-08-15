@@ -1,7 +1,7 @@
 package com.lyfz.smartPlatform.jar.common.dto.customer;
 
-import com.lyfz.smartPlatform.jar.common.enums.order.DataStatus;
 import com.lyfz.smartPlatform.jar.common.enums.order.GroupType;
+import com.lyfz.smartPlatform.jar.common.enums.order.DataStatus;
 import com.lyfz.smartPlatform.core.model.dto.IDto;
 import com.lyfz.smartPlatform.core.verify.Verify;
 import io.swagger.annotations.ApiModel;
