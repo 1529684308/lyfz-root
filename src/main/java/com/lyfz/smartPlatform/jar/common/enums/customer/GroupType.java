@@ -1,4 +1,4 @@
-package com.lyfz.smartPlatform.jar.common.enums.order;
+package com.lyfz.smartPlatform.jar.common.enums.customer;
 
 import com.baomidou.mybatisplus.core.enums.IEnum;
 

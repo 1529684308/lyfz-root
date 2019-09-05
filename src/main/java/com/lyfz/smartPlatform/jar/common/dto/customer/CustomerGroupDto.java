@@ -64,9 +64,20 @@ public class CustomerGroupDto implements IDto {
     /**
      * 来源ID
      */
-    @ApiModelProperty(value = "来源ID--orderDto的值是一样的",example="0")
+    @ApiModelProperty(value = "来源ID",example="0")
     @Verify(name = "来源ID", value = "positiveInteger")
     private Long originId;
+
+    /**
+     * 来源名称
+     */
+    @ApiModelProperty(value = "来源名称",example="老客户", required = true)
+    @Verify(name = "来源名称", value = "required|len_1_100")
+    private String originName;
+
+    @ApiModelProperty(value = "客户类型",example="ORDER_CONTACT", required = true)
+    @Verify(name = "客户类型", value = "required")
+    private CustomerType customerType;
 
     /**
      *客户类型 0.系统订单 1.老客户 2.其他

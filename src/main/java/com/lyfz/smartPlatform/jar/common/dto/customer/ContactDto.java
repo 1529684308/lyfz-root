@@ -1,9 +1,8 @@
 package com.lyfz.smartPlatform.jar.common.dto.customer;
 
-import com.lyfz.smartPlatform.jar.common.enums.order.GroupType;
-import com.lyfz.smartPlatform.jar.common.enums.order.DataStatus;
 import com.lyfz.smartPlatform.core.model.dto.IDto;
 import com.lyfz.smartPlatform.core.verify.Verify;
+import com.lyfz.smartPlatform.jar.common.enums.order.DataStatus;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -68,23 +67,10 @@ public class ContactDto implements IDto {
     /**
      * 生日年，主要是考虑农历的情况
      */
-    @ApiModelProperty(value = "生日-年，主要是考虑农历的情况",example="2019")
-    @Verify(name = "年", value = "positiveInteger")
-    private Integer birthdayYear;
+    @ApiModelProperty(value = "生日",example="2019")
+    @Verify(name = "生日", value = "positiveInteger")
+    private Long birthdayTime;
 
-    /**
-     * 生日月，主要是考虑农历的情况
-     */
-    @ApiModelProperty(value = "生日-月，主要是考虑农历的情况",example="6")
-    @Verify(name = "月", value = "positiveInteger")
-    private Integer birthdayMonth;
-
-    /**
-     * 生日日，主要是考虑农历的情况
-     */
-    @ApiModelProperty(value = "生日-日，主要是考虑农历的情况",example="27")
-    @Verify(name = "日", value = "positiveInteger")
-    private Integer birthdayDay;
 
     /**
      * 是否农历
@@ -115,23 +101,10 @@ public class ContactDto implements IDto {
     /**
      * 婚期年
      */
-    @ApiModelProperty(value = "婚期年-年，主要是考虑农历的情况",example="2019")
-    @Verify(name = "年", value = "positiveInteger")
-    private Integer marriageYear;
+    @ApiModelProperty(value = "婚期",example="2019")
+    @Verify(name = "婚期", value = "positiveInteger")
+    private Long marriageTime;
 
-    /**
-     * 婚期月
-     */
-    @ApiModelProperty(value = "婚期年-月，主要是考虑农历的情况",example="6")
-    @Verify(name = "月", value = "positiveInteger")
-    private Integer marriageMonth;
-
-    /**
-     * 婚期日
-     */
-    @ApiModelProperty(value = "婚期年-日，主要是考虑农历的情况",example="27")
-    @Verify(name = "日", value = "positiveInteger")
-    private Integer marriageDay;
 
 
     /**
@@ -146,10 +119,9 @@ public class ContactDto implements IDto {
     @ApiModelProperty(value = "加入组的ID",example = "1")
     private Long groupId;
 
-    @ApiModelProperty(value = "客户类型")
-    @Verify(name = "客户类型", value = "required")
-    private GroupType groupType;
-
+//    @ApiModelProperty(value = "客户类型")
+//    @Verify(name = "客户类型", value = "required")
+//    private GroupType groupType;
 
     @ApiModelProperty(value = "数据状态",example="ADD")
     @Verify(name = "数据状态", value = "required")

@@ -1,4 +1,4 @@
-package com.lyfz.smartPlatform.jar.common.enums.customer;
+package com.lyfz.smartPlatform.jar.common.enums.base;
 
 /**
  * @Author: mzh

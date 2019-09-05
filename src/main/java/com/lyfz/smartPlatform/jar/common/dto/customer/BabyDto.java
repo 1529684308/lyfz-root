@@ -1,6 +1,6 @@
 package com.lyfz.smartPlatform.jar.common.dto.customer;
 
-import com.lyfz.smartPlatform.jar.common.enums.order.GroupType;
+import com.lyfz.smartPlatform.jar.common.enums.customer.GroupType;
 import com.lyfz.smartPlatform.jar.common.enums.order.DataStatus;
 import com.lyfz.smartPlatform.core.model.dto.IDto;
 import com.lyfz.smartPlatform.core.verify.Verify;
@@ -31,23 +31,10 @@ public class BabyDto implements IDto {
     /**
      * 生日年，主要是考虑农历的情况
      */
-    @ApiModelProperty(value = "生日-年，主要是考虑农历的情况", example = "2019")
-    @Verify(name = "年", value = "positiveInteger")
-    private Integer birthdayYear;
+    @ApiModelProperty(value = "生日", example = "2019")
+    @Verify(name = "生日", value = "positiveInteger")
+    private Integer birthdayTime;
 
-    /**
-     * 生日月，主要是考虑农历的情况
-     */
-    @ApiModelProperty(value = "生日-月，主要是考虑农历的情况", example = "6")
-    @Verify(name = "月", value = "positiveInteger")
-    private Integer birthdayMonth;
-
-    /**
-     * 生日日，主要是考虑农历的情况
-     */
-    @ApiModelProperty(value = "生日-日，主要是考虑农历的情况", example = "27")
-    @Verify(name = "日", value = "positiveInteger")
-    private Integer birthdayDay;
 
     /**
      * 是否农历

@@ -8,16 +8,26 @@ import com.baomidou.mybatisplus.core.enums.IEnum;
  */
 
 public enum ProcessType implements IEnum<String> {
-    BILLING("开单","BILLING");
+    BILLING("BILLING","开单"),
+    PHOTO("PHOTO","拍照"),
+    REPAIR("REPAIR","初修"),
+    CHOOSE("CHOOSE","选片"),
+    REFINE("REFINE","精修"),
+    DESIGN("DESIGN","设计"),
+    WATCH("WATCH","看版"),
+    PICKUP("PICKUP","取件"),
+    VIDEO("VIDEO","录像"),
+    SERVICE("SERVICE","服务"),
+    ;
 
 
     private String description;
 
     private String code;
 
-    ProcessType(String description, String code) {
-        this.description = description;
+    ProcessType(String code, String description) {
         this.code = code;
+        this.description = description;
     }
 
 

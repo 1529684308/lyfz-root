@@ -4,20 +4,23 @@ import com.baomidou.mybatisplus.core.enums.IEnum;
 
 /**
  * @Author: mzh
- * @CreateTime: 2019-07-24
+ * @CreateTime: 2019-08-28
  */
-public enum OrderStatus implements IEnum<String> {
-    INTENTION("INTENTION","意向订单"),
-    COMPLETE("COMPLETE","完成订单")
-    ;
+public enum DescriptionType implements IEnum<String> {
+
+
+    ORDER("ORDER","订单备注"),
+    WATCH("WATCH","看版备注"),
+    GOODS_PROCESS("ORDER","返工备注"),
+    REWORK("REWORK","返工备注"),
+            ;
 
 
     private String code;
 
     private String description;
 
-
-    OrderStatus(String code, String description) {
+    DescriptionType(String code, String description) {
         this.code = code;
         this.description = description;
     }
