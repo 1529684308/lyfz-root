@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.core.enums.IEnum;
 
 public enum OrdinaryOrGrowEnum implements IEnum<String> {
     ORDINARY("普通套系", "ORDINARY"),
-    GROW("普通套系", "ORDINARY");
+    GROW("成长套系", "GROW");
 
     private String desc;
     private String message;
