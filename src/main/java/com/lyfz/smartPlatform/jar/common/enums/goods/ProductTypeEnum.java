@@ -10,8 +10,8 @@ public enum ProductTypeEnum implements IEnum {
     PLACE("景点", "PLACE"),
     SERVICE("服务", "SERVICE"),
     GROW("成长", "GROW"),
-    BOOK_COUNT("入册", "BOOK_COUNT"),
-    BOTTOM_COUNT("入底", "BOTTOM_COUNT"),
+//    BOOK_COUNT("入册", "BOOK_COUNT"),
+//    BOTTOM_COUNT("入底", "BOTTOM_COUNT"),
     GARMENT_COUNT("服装套数", "GARMENT_COUNT")
     ;
 
