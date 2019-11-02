@@ -11,9 +11,9 @@ import lombok.Data;
 @Data
 public class CategoryVo implements IVo {
 
-    private String id;
+    private Long id;
 
-    private String parentId;
+    private Long parentId;
 
     private String name;
 

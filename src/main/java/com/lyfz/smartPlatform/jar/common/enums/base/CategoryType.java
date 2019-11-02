@@ -21,8 +21,7 @@ public enum CategoryType implements IEnum<String> {
     PACKAGE_GIFT("套系礼包大类", "PACKAGE_GIFT",1),
     VIP_SERVICE_PACKAGE("会员服务套系大类", "VIP_SERVICE_PACKAGE",1),
     SHOOT_STAGE("拍摄阶段", "SHOOT_STAGE",1),
-    PLACE_LEVEL("景点等级", "PLACE_LEVEL",1),
-    PLACE_TYPE("景点分类", "PLACE_TYPE",1),
+
 
 
     DRESS("礼服", "DRESS",1),
@@ -76,6 +75,17 @@ public enum CategoryType implements IEnum<String> {
 
     FIXED_ASSETS("固定资产类别", "FIXED_ASSETS",1),
 
+
+
+    DEPARTMENT("部门", "DEPARTMENT",1),
+
+    POST("职位", "POST",1),
+
+    SERVICES("服务", "SERVICES",1),
+
+    PLACE("景点", "PLACE",1),
+
+    DRESS_INFO_LEVEL("服装等级", "DRESS_INFO_LEVEL",1),
     ;
 
 
