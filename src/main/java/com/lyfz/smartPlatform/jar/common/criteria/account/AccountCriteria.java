@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Data
-public class UserAccountCriteria extends PageCriteria {
+public class AccountCriteria extends PageCriteria {
 
     private Integer enterpriseId;
 
