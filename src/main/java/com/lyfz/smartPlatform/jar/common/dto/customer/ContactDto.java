@@ -96,7 +96,7 @@ public class ContactDto implements IDto {
      * 关系(多个宝宝的情况，关系可能不一样)
      */
     @ApiModelProperty(value = "宝宝关系数据JSON--这个数据格式后面商量决定",example="{}")
-    private String relationJson;
+    private Long relationJson;
 
     /**
      * 婚期年
@@ -126,6 +126,5 @@ public class ContactDto implements IDto {
     @ApiModelProperty(value = "数据状态",example="ADD")
     @Verify(name = "数据状态", value = "required")
     private DataStatus dataStatus;
-
 
 }

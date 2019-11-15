@@ -1,6 +1,7 @@
 package com.lyfz.smartPlatform.jar.common.vo.order;
 
 import com.lyfz.smartPlatform.core.model.vo.IVo;
+import com.lyfz.smartPlatform.jar.common.enums.customer.GroupType;
 import lombok.Data;
 
 /**
@@ -63,6 +64,8 @@ public class ContactVo implements IVo{
      */
     private Boolean birthdayLunar;
 
+    private Long birthdayTime;
+
     /**
      * 工作单位
      */
@@ -76,7 +79,7 @@ public class ContactVo implements IVo{
     /**
      * 关系
      */
-    private String relationJson;
+    private Long relationJson;
 
     /**
      * 婚期年
@@ -99,8 +102,12 @@ public class ContactVo implements IVo{
      */
     private Boolean marriageLunar;
 
+    private Long marriageTime;
+
     /**
      * 是否主联系人
      */
     private Boolean isLord;
+
+    private GroupType groupType;
 }

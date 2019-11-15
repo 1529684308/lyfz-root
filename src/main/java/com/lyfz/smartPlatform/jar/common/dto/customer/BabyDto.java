@@ -33,7 +33,9 @@ public class BabyDto implements IDto {
      */
     @ApiModelProperty(value = "生日", example = "2019")
     @Verify(name = "生日", value = "positiveInteger")
-    private Integer birthdayTime;
+    private Long birthdayTime;
+
+    private Boolean birthdayLunar;
 
 
     /**
@@ -54,7 +56,7 @@ public class BabyDto implements IDto {
      * 关系
      */
     @ApiModelProperty(value = "宝宝关系数据JSON--这个数据格式后面商量决定",example="{}")
-    private String relationJson;
+    private Long relationJson;
 
 
     @ApiModelProperty(value = "加入组的ID",example = "1")

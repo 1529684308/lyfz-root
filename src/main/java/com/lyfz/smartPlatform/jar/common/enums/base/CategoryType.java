@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.core.enums.IEnum;
  */
 public enum CategoryType implements IEnum<String> {
 
-    CUSTOMER_REGION("客户区域", "PACKAGE",1),
+    CUSTOMER_REGION("客户区域", "CUSTOMER_REGION",1),
     CUSTOMER_SOURCE("客户来源", "CUSTOMER_SOURCE",1),
     CUSTOMER_LOSE("客户流失原因", "CUSTOMER_LOSE",1),
     CUSTOMER_INTENTION("客户意向程度", "CUSTOMER_INTENTION",1),
@@ -86,6 +86,7 @@ public enum CategoryType implements IEnum<String> {
     PLACE("景点", "PLACE",1),
 
     DRESS_INFO_LEVEL("服装等级", "DRESS_INFO_LEVEL",1),
+    RELATION("与主客户关系", "RELATION", 1)
     ;
 
 

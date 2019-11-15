@@ -7,7 +7,7 @@ import com.baomidou.mybatisplus.core.enums.IEnum;
  * @CreateTime: 2019-07-15
  */
 public enum ContactStatus implements IEnum<Integer> {
-    NORMAL(1),
+    DEAL(1),
     TRACK(2),
     LOSS(3);
 

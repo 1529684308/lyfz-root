@@ -8,4 +8,5 @@ public enum Business {
 
     //订单
     ORDER,
+    CUSTOMER
 }
