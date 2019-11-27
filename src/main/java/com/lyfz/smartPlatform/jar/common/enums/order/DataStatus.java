@@ -7,5 +7,6 @@ package com.lyfz.smartPlatform.jar.common.enums.order;
 public enum DataStatus {
     ADD,
     UPDATE,
-    DELETE
+    DELETE,
+    NONE
 }

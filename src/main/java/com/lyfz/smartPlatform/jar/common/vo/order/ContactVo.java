@@ -79,7 +79,7 @@ public class ContactVo implements IVo{
     /**
      * 关系
      */
-    private Long relationJson;
+    private Long relation;
 
     /**
      * 婚期年

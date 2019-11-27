@@ -55,7 +55,7 @@ public class BabyVo implements IVo{
     /**
      * 关系
      */
-    private Long relationJson;
+    private Long relation;
 
     private GroupType groupType;
 

@@ -56,7 +56,7 @@ public class BabyDto implements IDto {
      * 关系
      */
     @ApiModelProperty(value = "宝宝关系数据JSON--这个数据格式后面商量决定",example="{}")
-    private Long relationJson;
+    private Long relation;
 
 
     @ApiModelProperty(value = "加入组的ID",example = "1")

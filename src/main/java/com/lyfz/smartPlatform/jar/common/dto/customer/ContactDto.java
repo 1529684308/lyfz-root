@@ -96,7 +96,7 @@ public class ContactDto implements IDto {
      * 关系(多个宝宝的情况，关系可能不一样)
      */
     @ApiModelProperty(value = "宝宝关系数据JSON--这个数据格式后面商量决定",example="{}")
-    private Long relationJson;
+    private Long relation;
 
     /**
      * 婚期年
