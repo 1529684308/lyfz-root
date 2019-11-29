@@ -8,7 +8,8 @@ import com.baomidou.mybatisplus.core.enums.IEnum;
  */
 public enum OrderType implements IEnum<String> {
     PROCESS("PROCESS","流程订单"),
-    GOODS("GOODS","商品订单")
+    GOODS("GOODS","商品订单"),
+    OTHER("OTHER", "散客消费")
     ;
 
     private String code;
