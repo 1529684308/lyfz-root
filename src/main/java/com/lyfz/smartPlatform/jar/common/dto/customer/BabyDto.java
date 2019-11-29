@@ -3,7 +3,6 @@ package com.lyfz.smartPlatform.jar.common.dto.customer;
 import com.lyfz.smartPlatform.jar.common.enums.customer.GroupType;
 import com.lyfz.smartPlatform.jar.common.enums.order.DataStatus;
 import com.lyfz.smartPlatform.core.model.dto.IDto;
-import com.lyfz.smartPlatform.core.verify.Verify;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -19,7 +18,6 @@ public class BabyDto implements IDto {
     private Long id;
 
     @ApiModelProperty(value = "宝宝名称", example = "宝宝", required = true)
-    @Verify(name = "宝宝姓名", value = "required|len_0_40")
     private String name;
 
     /**
@@ -32,7 +30,6 @@ public class BabyDto implements IDto {
      * 生日年，主要是考虑农历的情况
      */
     @ApiModelProperty(value = "生日", example = "2019")
-    @Verify(name = "生日", value = "positiveInteger")
     private Long birthdayTime;
 
     private Boolean birthdayLunar;
@@ -48,7 +45,6 @@ public class BabyDto implements IDto {
      * 生肖
      */
     @ApiModelProperty(value = "生肖", example = "猪")
-    @Verify(name = "生肖", value = "chinese_0_2")
     private String zodiac;
 
 
@@ -63,11 +59,9 @@ public class BabyDto implements IDto {
     private Long groupId;
 
     @ApiModelProperty(value = "客户类型")
-    @Verify(name = "客户类型", value = "required")
     private GroupType groupType;
 
     @ApiModelProperty(value = "数据状态",example="ADD")
-    @Verify(name = "数据状态", value = "required")
     private DataStatus dataStatus;
 
 

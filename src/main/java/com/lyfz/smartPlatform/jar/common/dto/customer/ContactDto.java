@@ -1,7 +1,6 @@
 package com.lyfz.smartPlatform.jar.common.dto.customer;
 
 import com.lyfz.smartPlatform.core.model.dto.IDto;
-import com.lyfz.smartPlatform.core.verify.Verify;
 import com.lyfz.smartPlatform.jar.common.enums.order.DataStatus;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -21,11 +20,9 @@ public class ContactDto implements IDto {
     private Long id;
 
     @ApiModelProperty(value = "客户姓名",example="老客户",required = true)
-    @Verify(name = "客户姓名", value = "required|len_1_55")
     private String name;
 
     @ApiModelProperty(value = "手机号码",example="15888888888")
-    @Verify(name = "手机号码", value = "len_1_55")
     private String mobile;
 
     /**
@@ -38,14 +35,12 @@ public class ContactDto implements IDto {
      * 客户区域Id
      */
     @ApiModelProperty(value = "客户区域ID",example="1")
-    @Verify(name = "客户区域ID", value = "positiveInteger")
     private Long categoryId;
 
     /**
      * 客户区域Id
      */
     @ApiModelProperty(value = "客户区域名称",example="惠州")
-    @Verify(name = "客户区域名称", value = "len_1_55")
     private String categoryName;
 
 
@@ -53,22 +48,18 @@ public class ContactDto implements IDto {
      * 固定电话
      */
     @ApiModelProperty(value = "固定电话",example="0752-8888888")
-    @Verify(name = "固定电话", value = "tel")
     private String tel;
 
     @ApiModelProperty(value = "QQ",example="888888888")
-    @Verify(name = "QQ", value = "len_0_10")
     private String qq;
 
     @ApiModelProperty(value = "微信",example="888888888")
-    @Verify(name = "微信", value = "len_0_50")
     private String wechat;
 
     /**
      * 生日年，主要是考虑农历的情况
      */
     @ApiModelProperty(value = "生日",example="2019")
-    @Verify(name = "生日", value = "positiveInteger")
     private Long birthdayTime;
 
 
@@ -82,14 +73,12 @@ public class ContactDto implements IDto {
      * 工作单位
      */
     @ApiModelProperty(value = "工作单位",example="利亚方舟")
-    @Verify(name = "工作单位", value = "len_0_170")
     private String workUnit;
 
     /**
      * 地址
      */
     @ApiModelProperty(value = "地址",example="惠州市三环")
-    @Verify(name = "地址", value = "len_0_220")
     private String address;
 
     /**
@@ -102,7 +91,6 @@ public class ContactDto implements IDto {
      * 婚期年
      */
     @ApiModelProperty(value = "婚期",example="2019")
-    @Verify(name = "婚期", value = "positiveInteger")
     private Long marriageTime;
 
 
@@ -120,11 +108,9 @@ public class ContactDto implements IDto {
     private Long groupId;
 
 //    @ApiModelProperty(value = "客户类型")
-//    @Verify(name = "客户类型", value = "required")
 //    private GroupType groupType;
 
     @ApiModelProperty(value = "数据状态",example="ADD")
-    @Verify(name = "数据状态", value = "required")
     private DataStatus dataStatus;
 
 }
