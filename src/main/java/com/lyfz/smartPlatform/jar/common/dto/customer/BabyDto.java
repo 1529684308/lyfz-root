@@ -1,8 +1,8 @@
 package com.lyfz.smartPlatform.jar.common.dto.customer;
 
-import com.lyfz.smartPlatform.jar.common.enums.customer.GroupType;
-import com.lyfz.smartPlatform.jar.common.enums.order.DataStatus;
+import com.lyfz.smartPlatform.core.model.common.BaseDataStatus;
 import com.lyfz.smartPlatform.core.model.dto.IDto;
+import com.lyfz.smartPlatform.jar.common.enums.customer.GroupType;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -12,7 +12,7 @@ import lombok.Data;
  */
 @ApiModel(value = "儿童对象")
 @Data
-public class BabyDto implements IDto {
+public class BabyDto extends BaseDataStatus implements IDto {
 
     @ApiModelProperty(hidden = true)
     private Long id;
@@ -61,8 +61,6 @@ public class BabyDto implements IDto {
     @ApiModelProperty(value = "客户类型")
     private GroupType groupType;
 
-    @ApiModelProperty(value = "数据状态",example="ADD")
-    private DataStatus dataStatus;
 
 
 }
