@@ -1,7 +1,7 @@
 package com.lyfz.smartPlatform.jar.common.dto.customer;
 
+import com.lyfz.smartPlatform.core.model.common.BaseDataStatus;
 import com.lyfz.smartPlatform.core.model.dto.IDto;
-import com.lyfz.smartPlatform.jar.common.enums.order.DataStatus;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -11,7 +11,7 @@ import lombok.Data;
  */
 @ApiModel(value="联系人对象")
 @Data
-public class ContactDto implements IDto {
+public class ContactDto extends BaseDataStatus implements IDto {
 
     /**
      * 业务需要使用
@@ -109,8 +109,5 @@ public class ContactDto implements IDto {
 
 //    @ApiModelProperty(value = "客户类型")
 //    private GroupType groupType;
-
-    @ApiModelProperty(value = "数据状态",example="ADD")
-    private DataStatus dataStatus;
 
 }
