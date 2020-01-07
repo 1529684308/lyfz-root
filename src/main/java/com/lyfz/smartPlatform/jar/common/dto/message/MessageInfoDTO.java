@@ -4,30 +4,33 @@ import lombok.Data;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 @Data
 public class MessageInfoDTO {
 
-    private String eventType;
+    private String code;
 
     private Integer shopId;
 
     private Integer enterpriseId;
 
-    /**
-     * 信息接收对象的姓名 XXX
-     */
-    private String name;
+    private Long createUser;
 
     /**
      * 接收对象的手机号
      */
-    private String phone;
+    private List<String> phones;
 
     /**
      * 性别
      */
     private Boolean sex;
+
+    /**
+     * 信息接收对象的姓名 XXX
+     */
+    private String name;
 
     /**
      * 店名 XXSPDM
