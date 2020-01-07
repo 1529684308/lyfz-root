@@ -19,6 +19,7 @@ public enum CategoryType implements IEnum<String> {
 
     PACKAGE("套系大类", "PACKAGE",1),
     PACKAGE_GIFT("套系礼包大类", "PACKAGE_GIFT",1),
+    PACKAGE_GROW("成长套系类别", "PACKAGE_GROW", 1),
     VIP_SERVICE_PACKAGE("会员服务套系大类", "VIP_SERVICE_PACKAGE",1),
     SHOOT_STAGE("拍摄阶段", "SHOOT_STAGE",1),
 

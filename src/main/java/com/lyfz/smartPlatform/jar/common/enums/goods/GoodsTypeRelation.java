@@ -1,21 +1,20 @@
-package com.lyfz.smartPlatform.jar.common.enums.customer;
+package com.lyfz.smartPlatform.jar.common.enums.goods;
 
 import com.baomidou.mybatisplus.core.enums.IEnum;
 
 /**
  * @Author: mzh
- * @CreateTime: 2019-06-28
+ * @CreateTime: 2019-12-16
  */
-public enum CustomerType implements IEnum<Integer> {
 
-    BABY(1, "宝宝"),
-    CONTACT(2, "联系人");
+public enum GoodsTypeRelation implements IEnum<Integer>{
+    ASSEMBLY(1, "套系"),
+    GIFT(2, "礼包");
 
     private Integer index;
-
     private String text;
 
-    CustomerType(Integer index, String text) {
+    GoodsTypeRelation(Integer index, String text) {
         this.index = index;
         this.text = text;
     }

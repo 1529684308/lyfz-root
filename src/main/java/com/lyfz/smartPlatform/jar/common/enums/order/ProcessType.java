@@ -18,6 +18,7 @@ public enum ProcessType implements IEnum<String> {
     PICKUP("PICKUP","取件"),
     VIDEO("VIDEO","录像"),
     SERVICE("SERVICE","服务"),
+    FINANCE("FINANCE", "财务")
     ;
 
 

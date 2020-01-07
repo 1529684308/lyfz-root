@@ -5,25 +5,18 @@ import com.baomidou.mybatisplus.core.enums.IEnum;
 /**
  * Created by mzh on 2019/6/28.
  */
-public enum ProductPurchaseType implements IEnum<Integer> {
+public enum SourceProducts implements IEnum<Integer> {
 
-    /**
-     * 套餐订购
-     */
-    PACKAGE(1),
-    /**
-     * 礼包订购
-     */
-    GIFT(2),
-    /**
-     * 其他订购
-     */
-    OTHER(3);
+    ASSEMBLY(1, "套系"),
+    GIFT(2, "礼包"),
+    ADD(3, "加挑");
 
     private Integer index;
+    private String text;
 
-    ProductPurchaseType(Integer index) {
+    SourceProducts(Integer index, String text) {
         this.index = index;
+        this.text = text;
     }
 
     @Override

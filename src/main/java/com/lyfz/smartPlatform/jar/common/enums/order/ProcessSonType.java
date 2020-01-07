@@ -8,13 +8,16 @@ import com.baomidou.mybatisplus.core.enums.IEnum;
  */
 public enum ProcessSonType implements IEnum<String> {
     BILLING_ENTRY("BILLING_ENTRY","开单录入员"),
-    STORE("STORE","门市"),
+    BILLING_STORE("BILLING_STORE","接单人"),
+    BILLING_SERVICE("BILLING_SERVICE", "专服人员"),
+    BILLING_NETWORK_SALES("BILLING_NETWORK_SALES", "网销人员"),
 
-    PHOTO_ENTRY("ENTRY","拍照录入员"),
-    PHOTOGRAPHY("PHOTOGRAPHY","摄影师"),
-    PHOTOGRAPHY_ASSISTANT("PHOTOGRAPHY_ASSISTANT","摄影师助理"),
-    MAKEUP_ARTIST("MAKEUP_ARTIST","化妆师助理"),
-    MAKEUP_ARTIST_ASSISTANT("MAKEUP_ARTIST_ASSISTANT","化妆师助理"),
+
+    PHOTO_ENTRY("PHOTO_ENTRY","拍照录入员"),
+    PHOTO_GRAPHY("PHOTO_GRAPHY","摄影师"),
+    PHOTO_GRAPHY_ASSISTANT("PHOTO_GRAPHY_ASSISTANT","摄影师助理"),
+    PHOTO_MAKEUP("PHOTO_MAKEUP","化妆师"),
+    PHOTO_MAKEUP_ASSISTANT("PHOTO_MAKEUP_ASSISTANT","化妆师助理"),
 
     REPAIR_ENTRY("REPAIR_ENTRY","初修录入员"),
     REPAIR_OUTGO("REPAIR_OUTGO","初修外发人员"),
@@ -42,15 +45,19 @@ public enum ProcessSonType implements IEnum<String> {
     GOODS_TOSHOP("GOODS_TOSHOP","商品到店录入人员"),
 
     GOODS_PICKUP("GOODS_PICKUP","商品到店录入人员"),
+
+    FINANCE_EARLY_SALE("FINANCE_EARLY_SALE", "前期销售人员"),
+    FINANCE_LATE_SALE("FINANCE_LATESALE", "后期销售人员")
     ;
 
-    private String description;
 
     private String code;
 
-    ProcessSonType(String code, String description) {
+    private String text;
+
+    ProcessSonType(String code, String text) {
         this.code = code;
-        this.description = description;
+        this.text = text;
     }
 
     @Override

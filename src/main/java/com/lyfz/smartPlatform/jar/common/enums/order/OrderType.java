@@ -4,13 +4,13 @@ import com.baomidou.mybatisplus.core.enums.IEnum;
 
 /**
  * @Author: mzh
- * @CreateTime: 2019-09-12
+ * @CreateTime: 2019-07-24
  */
 public enum OrderType implements IEnum<String> {
-    PROCESS("PROCESS","流程订单"),
-    GOODS("GOODS","商品订单"),
-    OTHER("OTHER", "散客消费")
+    INTENTION("INTENTION","意向订单"),
+    COMPLETE("COMPLETE","完成订单")
     ;
+
 
     private String code;
 
@@ -21,7 +21,6 @@ public enum OrderType implements IEnum<String> {
         this.code = code;
         this.description = description;
     }
-
 
     @Override
     public String getValue() {

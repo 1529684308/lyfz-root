@@ -6,16 +6,20 @@ import com.baomidou.mybatisplus.core.enums.IEnum;
  * @Author: mzh
  * @CreateTime: 2019-07-15
  */
-public enum ContactStatus implements IEnum<Integer> {
-    DEAL(1),
-    TRACK(2),
-    LOSS(3);
+public enum CustomerGroupType implements IEnum<Integer> {
 
+    CUSTOMER_ORDER(1, "订单客户"),
+    CUSTOMER_INTENTION(2, "意向客户"),
+    CUSTOMER_OTHER(3, "其他客户"),
+    ;
 
     private Integer index;
 
-    ContactStatus(Integer index) {
+    private String text;
+
+    CustomerGroupType(Integer index, String text) {
         this.index = index;
+        this.text = text;
     }
 
     @Override
