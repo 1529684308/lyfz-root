@@ -9,7 +9,8 @@ public enum GatherEnum implements IEnum {
     ORDER("礼服租金", "ORDER"),
     DEPOSIT("礼服押金", "DEPOSIT"),
     OTHER("其他消费", "OTHER"),
-    REFUND("退款", "REFUND")
+    REFUND("退款", "REFUND"),
+    BROKEN("报损", "BROKEN")
     ;
     private String desc;
     private String message;
