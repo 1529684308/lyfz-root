@@ -9,7 +9,8 @@ import com.baomidou.mybatisplus.core.enums.IEnum;
 
 public enum GoodsTypeRelation implements IEnum<Integer>{
     ASSEMBLY(1, "套系"),
-    GIFT(2, "礼包");
+    GIFT(2, "礼包"),
+    PLACE(3, "景点");
 
     private Integer index;
     private String text;

@@ -77,7 +77,6 @@ public enum CategoryType implements IEnum<String> {
     FIXED_ASSETS("固定资产类别", "FIXED_ASSETS",1),
 
 
-
     DEPARTMENT("部门", "DEPARTMENT",1),
 
     POST("职位", "POST",1),
@@ -86,7 +85,6 @@ public enum CategoryType implements IEnum<String> {
 
     PLACE("景点", "PLACE",1),
 
-    DRESS_INFO_LEVEL("服装等级", "DRESS_INFO_LEVEL",1),
     RELATION("与主客户关系", "RELATION", 1)
     ;
 

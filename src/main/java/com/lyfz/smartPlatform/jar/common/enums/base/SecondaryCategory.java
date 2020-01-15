@@ -21,10 +21,6 @@ public enum SecondaryCategory {
 
     GOODS_SERVICE("服务类别", CategoryType.GOODS, 2),
 
-    PLACE_LEVEL_ONE("一级", CategoryType.DRESS_INFO_LEVEL, 2),
-    PLACE_LEVEL_TWO("二级", CategoryType.DRESS_INFO_LEVEL, 2),
-    PLACE_LEVEL_THREE("三级", CategoryType.DRESS_INFO_LEVEL, 2),
-
     SECONDARY_SALES_SELECTION("选片师二销", CategoryType.SECONDARY_SALES, 2),
     SECONDARY_SALES_DOCUMENT_PHOTO("证件照", CategoryType.SECONDARY_SALES, 2),
 
