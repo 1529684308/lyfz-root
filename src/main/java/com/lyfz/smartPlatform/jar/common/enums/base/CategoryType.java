@@ -26,14 +26,14 @@ public enum CategoryType implements IEnum<String> {
 
 
     DRESS("礼服", "DRESS",1),
-    DRESS_OTHER_TYPE("礼服其他类别", "DRESS_OTHER_TYPE",1),
-    DRESS_SUPPLIER("礼服进货厂家", "DRESS_SUPPLIER",1),
+    DRESS_OTHER_TYPE("礼服服装类别", "DRESS_TYPE",1),
+    DRESS_SUPPLIER("礼服摆放区域", "DRESS_AREA",1),
     DRESS_COLOR("礼服颜色", "DRESS_COLOR",1),
     DRESS_STYLE("礼服风格", "DRESS_STYLE",1),
     DRESS_PATTERN("礼服样式", "DRESS_PATTERN",1),
     DRESS_SLEEVE_LENGTH("礼服袖长", "DRESS_SLEEVE_LENGTH",1),
     DRESS_SKIRT_LENGTH("礼服裙长", "DRESS_SKIRT_LENGTH",1),
-    DRESS_SIEZ("礼服尺寸", "DRESS_SIEZ",1),
+    DRESS_SIEZ("礼服尺寸", "DRESS_SIZE",1),
     DRESS_OTHER("礼服其他", "DRESS_OTHER",1),
 
     ORDER_TYPE("订单类别", "ORDER_TYPE",1),
