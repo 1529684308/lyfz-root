@@ -1,23 +1,19 @@
-package com.lyfz.smartPlatform.jar.common.enums.goods;
+package com.lyfz.smartPlatform.jar.common.enums.order;
 
 import com.baomidou.mybatisplus.core.enums.IEnum;
 
 /**
  * @Author: mzh
- * @CreateTime: 2019-12-16
+ * @CreateTime: 2020-01-15
  */
-
-public enum GoodsTypeRelation implements IEnum<Integer>{
+public enum SourcePackage implements IEnum<Integer> {
     ASSEMBLY(1, "套系"),
-    GIFT(2, "礼包"),
-    PLACE(3, "景点"),
-    SERVICES(4, "服务"),
-    DRESSINFO(5, "服装");
+    GIFT(2, "礼包");
 
     private Integer index;
     private String text;
 
-    GoodsTypeRelation(Integer index, String text) {
+    SourcePackage(Integer index, String text) {
         this.index = index;
         this.text = text;
     }
