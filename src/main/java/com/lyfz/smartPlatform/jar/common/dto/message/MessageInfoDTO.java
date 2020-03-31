@@ -1,5 +1,6 @@
 package com.lyfz.smartPlatform.jar.common.dto.message;
 
+import com.lyfz.smartPlatform.jar.common.enums.message.MessageCodeEnum;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -9,7 +10,7 @@ import java.util.List;
 @Data
 public class MessageInfoDTO {
 
-    private String code;
+    private MessageCodeEnum code;
 
     private Integer shopId;
 
